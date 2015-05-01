@@ -18,3 +18,15 @@ PRODUCT_NAME := shinano
 PRODUCT_DEVICE := shinano
 PRODUCT_MODEL := Xperia Z3 (B2G)
 
+GAIA_DEV_PIXELS_PER_PX := 2.25
+
+BOOTANIMATION_ASSET_SIZE := 1080p
+
+vendor_binary_files := $(strip $(wildcard vendor/sony/shinano/shinano-partial.mk))
+ifeq ($(vendor_binary_files),)
+  $(error Vendor binary files are not found. Please download from: \
+  http://developer.sonymobile.com/downloads/tool/software-binaries-for-aosp-lollipop-android-5-1/ \
+  then extract in B2G dir and try again.)
+endif
+
+$(call inherit-product-if-exists, vendor/sony/shinano-blobs/shinano-vendor-blobs.mk)
