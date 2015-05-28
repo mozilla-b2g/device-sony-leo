@@ -12,5 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/shinano.mk
+$(call inherit-product, device/sony/leo/aosp_d6603.mk)
+
+PRODUCT_NAME := shinano
+PRODUCT_DEVICE := shinano
+PRODUCT_MODEL := Xperia Z3 (B2G)
 
