@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo shinano-userdebug
+add_lunch_combo leo-userdebug
