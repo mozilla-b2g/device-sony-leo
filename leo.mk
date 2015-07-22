@@ -14,11 +14,11 @@
 
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
 
-PRODUCT_NAME := shinano
-PRODUCT_DEVICE := shinano
+PRODUCT_NAME := leo
+PRODUCT_DEVICE := leo
 PRODUCT_MODEL := Xperia Z3 (B2G)
 
 GAIA_DEV_PIXELS_PER_PX := 2.25
 BOOTANIMATION_ASSET_SIZE := 1080p
 
-$(call inherit-product-if-exists, vendor/sony/shinano-blobs/shinano-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/sony/leo-blobs/leo-vendor-blobs.mk)
