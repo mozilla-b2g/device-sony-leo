@@ -24,4 +24,7 @@ BOOTANIMATION_ASSET_SIZE := 1080p
 PRODUCT_COPY_FILES += \
     device/sony/leo/bootrec-device:root/sbin/bootrec-device
 
+# Set Gecko toolchain
+GECKO_TOOLS_PREFIX = prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+
 $(call inherit-product-if-exists, vendor/sony/leo-blobs/leo-vendor-blobs.mk)
